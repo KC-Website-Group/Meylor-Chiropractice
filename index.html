@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+
+</head>
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="top-bar-important">
+            <a href="/services/auto-injury-relief.html">
+                <i aria-hidden="true" class="fas fa-car-crash"></i>
+                Involved in an auto accident? Click here.
+            </a>
+        </div>
+        <div class="cs-top-bar">
+            <div class="cs-top-container">
+                <div class="cs-top-contact">
+                    <a href="" class="cs-top-link">
+                        <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-pin-green.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                        555 Fake Avenue - South Milwaukee, WI 53172
+                    </a>
+                </div>
+
+                <div class="cs-top-contact">
+                   <!-- Google Translate Widget -->
+                    <div id="google_translate_element"></div>
+
+                    <!-- Custom Toggle Button -->
+                    <div id="custom-lang-selector">
+                        <img id="lang-flag" src="https://flagcdn.com/us.svg" width="20" alt="flag">
+                        <span id="current-lang">English</span>
+                        <span>▼</span>
+                    </div>
+                </div>
+
+                <div class="cs-top-social">
+                    <a href="" class="cs-top-link">
+                        <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-phone-green.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                        (555) 678-2345
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-dark.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="assets/images/logo-min.png" alt="logo" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <a href="services.html"  class="cs-li-link">Services
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-green.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </a>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a class="cs-li-link cs-drop-link " href="/services/accupuncture.html">Accupuncture</a>
+                                </li>
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a href="/services/auto-injury-relief-page.html" class="cs-li-link cs-drop-link">Auto Injury Relief</a>
+                                </li>
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a href="/services/chiropractic.html" class="cs-li-link cs-drop-link">Chiropractic
+                                        <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                    </a>
+                                    <!--Tertiary-->
+                                    <ul class="cs-drop3">
+                                       <li class="cs-drop-li3">
+                                            <div class="cs-drop4-main">
+                                                <a href="/services/chiropractic/spine-related.html" class="cs-li-link cs-drop-link">Spine Related
+                                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                                </a>
+                                                <ul class="cs-drop4">
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/spine-related/back-pain.html" class="cs-li-link cs-drop-link cs-drop-link4">Back Pain</a></li>
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/spine-related/headaches-and-migraines.html" class="cs-li-link cs-drop-link cs-drop-link4">Headaches and Migraines</a></li>
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/spine-related/neck-pain.html" class="cs-li-link cs-drop-link cs-drop-link4">Neck Pain</a></li>
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/spine-related/sciatica.html" class="cs-li-link cs-drop-link cs-drop-link4">Sciatica</a></li>
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/spine-related/scolliosis.html" class="cs-li-link cs-drop-link cs-drop-link4">Scolliosis</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <div class="cs-drop4-main">
+                                                <a href="/services/chiropractic/injuries.html" class="cs-li-link cs-drop-link">Injuries
+                                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                                </a>
+                                                <ul class="cs-drop4">
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/injuries/disk-injury.html" class="cs-li-link cs-drop-link cs-drop-link4">Disk Injury</a></li>
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/injuries/whiplash.html" class="cs-li-link cs-drop-link cs-drop-link4">Whiplash</a></li>
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/injuries/work-injuriy.html" class="cs-li-link cs-drop-link cs-drop-link4">Work Injury</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <div class="cs-drop4-main">
+                                                <a class="cs-li-link cs-drop-link" href="/services/chiropractic/extemities.html">Extremities
+                                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                                </a>
+                                                <ul class="cs-drop4">
+                                                    <li class="cs-drop-li4"><a href="#" class="cs-li-link cs-drop-link cs-drop-link4">Arm and Leg Pain</a></li>
+                                                    <li class="cs-drop-li4"><a href="#" class="cs-li-link cs-drop-link cs-drop-link4">Carpal Tunnel</a></li>
+                                                    <li class="cs-drop-li4"><a href="#" class="cs-li-link cs-drop-link cs-drop-link4">Shoulder Pain</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <div class="cs-drop4-main">
+                                                <a href="/services/chiropractic/family-chiropractic.html" class="cs-li-link cs-drop-link">
+                                                    Family Chiropractic
+                                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                                </a>
+                                                <ul class="cs-drop4">
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/family-chiropractic/chiropractic-care-for-kids.html" class="cs-li-link cs-drop-link cs-drop-link4">Chiropractic Care for Kids</a></li>
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/family-chiropractic/pregnancy.html" class="cs-li-link cs-drop-link cs-drop-link4">Pregnancy</a></li>
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/family-chiropractic/wellness-care.html" class="cs-li-link cs-drop-link cs-drop-link4">Wellness Care</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                         <li class="cs-drop-li3">
+                                            <div class="cs-drop4-main">
+                                                <a href="/services/chiropractic/other-symptoms.html" class="cs-li-link cs-drop-link">
+                                                    Other Symptoms
+                                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                                </a>
+                                                <ul class="cs-drop4">
+                                                    <li class="cs-drop-li4"><a href="/services/chiropractic/other-symptoms/vertigo.html" class="cs-li-link cs-drop-link cs-drop-link4">Vertigo</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a href="/services/golf.html"  class="cs-li-link cs-drop-link">Golf</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <a href="patients.html"  class="cs-li-link">Patients
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-green.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </a>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a class="cs-li-link cs-drop-link " href="/patients/forms.html">Forms</a>
+                                </li>
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a href="/patients/review-us.html" class="cs-li-link cs-drop-link">Review Us</a>
+                                </li>
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a href="/patients/blog.html" class="cs-li-link cs-drop-link">Blog</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li class="cs-li cs-dropdown" tabindex="0">
+                            <a href="about.html"  class="cs-li-link">About
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-green.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </a>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a class="cs-li-link cs-drop-link " href="/about/meet-our-team.html">Meet Our Team</a>
+                                </li>
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <a href="/about/testimonials.html" class="cs-li-link cs-drop-link">Testimonials</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <a href="" class="cs-button-solid cs-nav-button nav-men">Donate Now</a>
+            <a href="" class="cs-button-solid cs-nav-button nav-men">$ New Patient Special Offer</a>
+        </div>
+    </header>
+                                    
+
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,es',
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Script to toggle languages -->
+  <script>
+    const waitForDropdown = setInterval(() => {
+      const select = document.querySelector('.goog-te-combo');
+      if (select) {
+        clearInterval(waitForDropdown);
+
+        const button = document.getElementById('custom-lang-selector');
+        const label = document.getElementById('current-lang');
+        const flag = document.getElementById('lang-flag');
+
+        button.addEventListener('click', () => {
+          const isEnglish = label.textContent.trim().toLowerCase() === 'english';
+          const langCode = isEnglish ? 'es' : 'en';
+
+          select.value = langCode;
+          select.dispatchEvent(new Event('change'));
+
+          label.textContent = isEnglish ? 'Español' : 'English';
+          flag.src = isEnglish
+            ? 'https://flagcdn.com/es.svg'
+            : 'https://flagcdn.com/us.svg';
+        });
+      }
+    }, 300);
+  </script>
+
+    <script src="assets/js/core.js"></script>
+</body>
+</html>
